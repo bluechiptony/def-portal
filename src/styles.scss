@@ -44,6 +44,11 @@ body {
 }
 // body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+.bg-ship {
+  background-image: url("assets/images/ship-house.jpg");
+  background-size: cover;
+}
+
 .table-height {
   min-height: 550px;
   width: 100%;

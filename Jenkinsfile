@@ -8,7 +8,7 @@ node {
 
     stage('build-image/push'){
         docker.withRegistry('https://index.docker.io/v1/', 'bluechip-docker'){
-            def app = docker.build("bluechiptony/naptipcoop:latest", '.').push()
+            def app = docker.build("bluechiptony/defence:latest", '.').push()
         }
 
     }

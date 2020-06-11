@@ -2,7 +2,9 @@
 // $darkBlue: #78b2dd;
 $darkBlue: #5fb7ff;
 $lightBlue: #114678;
-$main: #160430;
+// $main: #160430;
+$main: #0b180d;
+$mainTr: #0b180de2;
 
 $darkGreen: #126c20;
 $lightGreen: #8ed549;
@@ -25,6 +27,9 @@ $errorRed: #ba0b0b;
 
 .bg-main {
   background-color: $main;
+}
+.bg-main-tr {
+  background-color: $mainTr;
 }
 
 .bg-hr {
