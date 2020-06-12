@@ -366,10 +366,12 @@ div.overview-content div.overview-list-box:last-child {
   border: 1px solid #16043074;
   box-shadow: 0 0 20px 0 #16043023;
   transition: all 0.3s ease-in-out;
-  background-color: #faf6ff;
+  // background-color: #faf6ff;
+  background-color: lighten($color: $main, $amount: 98.8);
 }
 .notice-box:hover {
-  box-shadow: 0 0 20px 0 #16043030;
+  // box-shadow: 0 0 20px 0 #16043030;
+  box-shadow: 0 0 20px 0 lighten($color: $main, $amount: 98.8);
 }
 .addition-box {
   box-sizing: border-box;
@@ -379,13 +381,15 @@ div.overview-content div.overview-list-box:last-child {
   border: 1px dashed #16043074;
   // box-shadow: 0 0 20px 0 #16043023;
   transition: all 0.3s ease-in-out;
-  background-color: #faf6ff;
+  // background-color: #faf6ff;
+  background-color: lighten($color: $main, $amount: 88.8);
 }
 
 .addition-box:hover {
   // box-shadow: 0 0 20px 0 #16043030;
   border: 1px dashed #26065274;
-  background-color: #ede3fa;
+  // background-color: #ede3fa;
+  background-color: lighten($color: $main, $amount: 70.8);
 }
 
 .table-pill {

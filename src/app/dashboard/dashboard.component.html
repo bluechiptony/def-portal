@@ -25,7 +25,148 @@
       <button class="btn btn-link" accordion-heading type="button">
         <i class="uil uil-home"></i>
 
-        <span class="nav-text">Administration</span>
+        <span class="nav-text">Administrative Units</span>
+      </button>
+
+      <div class="sub-menu">
+        <ul class="sub-list">
+          <li
+            class="sub-list-item"
+            [routerLink]="['zonal-commands']"
+            routerLinkActive="router-link-active"
+          >
+            <span>Servicom</span>
+          </li>
+          <li
+            class="sub-list-item"
+            [routerLink]="['departments']"
+            routerLinkActive="router-link-active"
+          >
+            <span>Reform</span>
+          </li>
+          <li
+            class="sub-list-item"
+            [routerLink]="['memos']"
+            routerLinkActive="router-link-active"
+          >
+            <span>Internal Audit</span>
+          </li>
+          <li
+            class="sub-list-item"
+            [routerLink]="['reports']"
+            routerLinkActive="router-link-active"
+          >
+            <span>Anti Corruption & Transparency</span>
+          </li>
+          <li
+            class="sub-list-item"
+            [routerLink]="['memos']"
+            routerLinkActive="router-link-active"
+          >
+            <span>Stock Verification</span>
+          </li>
+          <li
+            class="sub-list-item"
+            [routerLink]="['reports']"
+            routerLinkActive="router-link-active"
+          >
+            <span>Protocol</span>
+          </li>
+          <li
+            class="sub-list-item"
+            [routerLink]="['reports']"
+            routerLinkActive="router-link-active"
+          >
+            <span>Press & Public Relations</span>
+          </li>
+        </ul>
+      </div>
+    </accordion-group>
+    <accordion-group class="" *ngIf="adminContext === 'ADMINISTRATION'">
+      <button class="btn btn-link" accordion-heading type="button">
+        <i class="uil uil-home"></i>
+
+        <span class="nav-text">Finance and Accounts</span>
+      </button>
+
+      <div class="sub-menu">
+        <ul class="sub-list">
+          <li
+            class="sub-list-item"
+            [routerLink]="['zonal-commands']"
+            routerLinkActive="router-link-active"
+          >
+            <span>Requests</span>
+          </li>
+          <li
+            class="sub-list-item"
+            [routerLink]="['departments']"
+            routerLinkActive="router-link-active"
+          >
+            <span>Payments</span>
+          </li>
+          <li
+            class="sub-list-item"
+            [routerLink]="['memos']"
+            routerLinkActive="router-link-active"
+          >
+            <span>Audits</span>
+          </li>
+          <li
+            class="sub-list-item"
+            [routerLink]="['reports']"
+            routerLinkActive="router-link-active"
+          >
+            <span>Loans</span>
+          </li>
+        </ul>
+      </div>
+    </accordion-group>
+    <accordion-group class="" *ngIf="adminContext === 'ADMINISTRATION'">
+      <button class="btn btn-link" accordion-heading type="button">
+        <i class="uil uil-home"></i>
+
+        <span class="nav-text">Legal</span>
+      </button>
+
+      <div class="sub-menu">
+        <ul class="sub-list">
+          <li
+            class="sub-list-item"
+            [routerLink]="['zonal-commands']"
+            routerLinkActive="router-link-active"
+          >
+            <span>Briefs</span>
+          </li>
+          <li
+            class="sub-list-item"
+            [routerLink]="['departments']"
+            routerLinkActive="router-link-active"
+          >
+            <span>Cases</span>
+          </li>
+          <li
+            class="sub-list-item"
+            [routerLink]="['memos']"
+            routerLinkActive="router-link-active"
+          >
+            <span>Summons</span>
+          </li>
+          <li
+            class="sub-list-item"
+            [routerLink]="['reports']"
+            routerLinkActive="router-link-active"
+          >
+            <span>Reports</span>
+          </li>
+        </ul>
+      </div>
+    </accordion-group>
+    <accordion-group class="" *ngIf="adminContext === 'ADMINISTRATION'">
+      <button class="btn btn-link" accordion-heading type="button">
+        <i class="uil uil-home"></i>
+
+        <span class="nav-text">Medical Services</span>
       </button>
 
       <div class="sub-menu">
@@ -129,7 +270,85 @@
     <accordion-group *ngIf="adminContext === 'OPERATIONS'">
       <button class="btn btn-link" accordion-heading type="button">
         <i class="uil uil-building"></i>
-        <span class="nav-text">Activity</span>
+        <span class="nav-text">Joint Services</span>
+      </button>
+
+      <div class="sub-menu">
+        <ul class="sub-list">
+          <li
+            class="sub-list-item"
+            [routerLink]="['meetings']"
+            routerLinkActive="router-link-active"
+          >
+            <span>Meetings</span>
+          </li>
+          <li
+            class="sub-list-item"
+            [routerLink]="['notices']"
+            routerLinkActive="router-link-active"
+          >
+            <span>Notices</span>
+          </li>
+          <li
+            class="sub-list-item"
+            [routerLink]="['events']"
+            routerLinkActive="router-link-active"
+          >
+            <span>Events</span>
+          </li>
+          <li
+            class="sub-list-item"
+            [routerLink]="['calendar']"
+            routerLinkActive="router-link-active"
+          >
+            <span>Calendar</span>
+          </li>
+        </ul>
+      </div>
+    </accordion-group>
+    <accordion-group *ngIf="adminContext === 'OPERATIONS'">
+      <button class="btn btn-link" accordion-heading type="button">
+        <i class="uil uil-building"></i>
+        <span class="nav-text">Army Affairs</span>
+      </button>
+
+      <div class="sub-menu">
+        <ul class="sub-list">
+          <li
+            class="sub-list-item"
+            [routerLink]="['meetings']"
+            routerLinkActive="router-link-active"
+          >
+            <span>Meetings</span>
+          </li>
+          <li
+            class="sub-list-item"
+            [routerLink]="['notices']"
+            routerLinkActive="router-link-active"
+          >
+            <span>Notices</span>
+          </li>
+          <li
+            class="sub-list-item"
+            [routerLink]="['events']"
+            routerLinkActive="router-link-active"
+          >
+            <span>Events</span>
+          </li>
+          <li
+            class="sub-list-item"
+            [routerLink]="['calendar']"
+            routerLinkActive="router-link-active"
+          >
+            <span>Calendar</span>
+          </li>
+        </ul>
+      </div>
+    </accordion-group>
+    <accordion-group *ngIf="adminContext === 'OPERATIONS'">
+      <button class="btn btn-link" accordion-heading type="button">
+        <i class="uil uil-building"></i>
+        <span class="nav-text">Navy Affairs</span>
       </button>
 
       <div class="sub-menu">
@@ -166,6 +385,84 @@
       </div>
     </accordion-group>
 
+    <accordion-group *ngIf="adminContext === 'OPERATIONS'">
+      <button class="btn btn-link" accordion-heading type="button">
+        <i class="uil uil-building"></i>
+        <span class="nav-text">Air Force Affairs</span>
+      </button>
+
+      <div class="sub-menu">
+        <ul class="sub-list">
+          <li
+            class="sub-list-item"
+            [routerLink]="['meetings']"
+            routerLinkActive="router-link-active"
+          >
+            <span>Meetings</span>
+          </li>
+          <li
+            class="sub-list-item"
+            [routerLink]="['notices']"
+            routerLinkActive="router-link-active"
+          >
+            <span>Notices</span>
+          </li>
+          <li
+            class="sub-list-item"
+            [routerLink]="['events']"
+            routerLinkActive="router-link-active"
+          >
+            <span>Events</span>
+          </li>
+          <li
+            class="sub-list-item"
+            [routerLink]="['calendar']"
+            routerLinkActive="router-link-active"
+          >
+            <span>Calendar</span>
+          </li>
+        </ul>
+      </div>
+    </accordion-group>
+    <accordion-group *ngIf="adminContext === 'OPERATIONS'">
+      <button class="btn btn-link" accordion-heading type="button">
+        <i class="uil uil-building"></i>
+        <span class="nav-text">Procurement</span>
+      </button>
+
+      <div class="sub-menu">
+        <ul class="sub-list">
+          <li
+            class="sub-list-item"
+            [routerLink]="['meetings']"
+            routerLinkActive="router-link-active"
+          >
+            <span>Requests</span>
+          </li>
+          <li
+            class="sub-list-item"
+            [routerLink]="['notices']"
+            routerLinkActive="router-link-active"
+          >
+            <span>Inventory</span>
+          </li>
+          <li
+            class="sub-list-item"
+            [routerLink]="['events']"
+            routerLinkActive="router-link-active"
+          >
+            <span>Allocations</span>
+          </li>
+          <li
+            class="sub-list-item"
+            [routerLink]="['calendar']"
+            routerLinkActive="router-link-active"
+          >
+            <span>Acquisitions</span>
+          </li>
+        </ul>
+      </div>
+    </accordion-group>
     <accordion-group class="" *ngIf="adminContext === 'HUMAN_RESOURCES'">
       <button class="btn btn-link" accordion-heading type="button">
         <i class="uil uil-invoice"></i>
@@ -404,12 +701,13 @@
       <i class="uil uil-list-ul link-up" (click)="toggleDrawer()"></i>
       &nbsp;
 
-      <span class="" *ngIf="loggedInUser.accountType != 'STAFF'">
+      <span
+        class=""
+        *ngIf="loggedInUser.accountType != 'STAFF'"
+        [matMenuTriggerFor]="userMenu"
+      >
         {{ adminContext }}
-        <i
-          class="uil uil-angle-double-down link-up"
-          [matMenuTriggerFor]="userMenu"
-        ></i>
+        <i class="uil uil-angle-double-down link-up"></i>
         <mat-menu #userMenu="matMenu" xPosition="before">
           <span mat-menu-item (click)="changeContext('ADMINISTRATION')">
             Administration

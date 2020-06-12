@@ -64,7 +64,8 @@ body {
 }
 
 .mat-menu-item:hover {
-  background-color: #9129d241 !important;
+  // background-color: #9129d241 !important;
+  background-color: lighten($color: $main, $amount: 70) !important;
   color: #fff;
 }
 table {
